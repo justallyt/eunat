@@ -1,0 +1,6 @@
+#landing{
+       height: 105vh;
+       background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.2)),url("../assets/landing.jpg") no-repeat;
+       background-size: cover;
+       background-position: center;
+}
