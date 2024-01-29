@@ -7,8 +7,8 @@
 }
 
 :root{
-     --main-color: rgb(0, 221, 255);
-     --secondary-color: rgb(237, 26, 26);
+     --main-color: rgb(6, 203, 234);
+     --secondary-color: #e31b23;
      --dark-color: #111;
       --font-primary: 'Kumbh Sans', sans-serif;
       --font-bold: 'DM Sans', sans-serif;
@@ -33,6 +33,16 @@ img{
      object-fit: cover;
 }
 
+::-webkit-scrollbar {
+      width: 6px;
+}
+::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+      background: black; 
+        border-radius:10px;
+}
 
 /* Utils */
 .inner-row{
@@ -41,9 +51,14 @@ img{
 }
 
 /* Header Styles */
+header{
+        border-bottom: 1px solid rgba(152, 185, 192, 0.2);
+        height: 85px;
+        position: relative;
+        z-index: 999;
+}
 .header-content{
       padding: 10px 0;
-      border-bottom: 1px solid rgba(233, 233, 233, 0.477);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -75,7 +90,11 @@ img{
 .header-content .logo p{
       font-size: 12px;
 }
-
+.header-content nav{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+}
 .header-content nav ul{ 
       display: flex;
       gap: 30px;;
@@ -107,4 +126,35 @@ img{
        width: 100%;
        left: 0;
        opacity: 1;
+}
+
+.header-content .header-actions{
+          display: flex;
+          gap: 20px;
+          align-items: center;
+}
+.header-actions .call-action{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: whitesmoke;
+}
+.call-action span{
+        display: flex;
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+}
+
+.header-actions a{
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--main-color);
+        color: white;
 }

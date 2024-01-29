@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
 import logo from "../../../assets/logo.png"
+import { HiPhone } from "react-icons/hi2";
 const Header = () => {
   return (
     <header>
@@ -20,8 +21,15 @@ const Header = () => {
                                                           <li><NavLink to={'/services/'}>Services</NavLink></li>
                                                           <li><NavLink to={'/contact-us/'}>Contact Us</NavLink></li>
                                                </ul>
+
+                                               <div className="header-actions">
+                                                            <div className="call-action">
+                                                                       <span><HiPhone /></span>
+                                                                        +254 7123 45678
+                                                            </div>
+                                                            <Link to={'/'}>Get a Quote</Link>
+                                              </div>
                                   </nav>
-                                  <div className="header-actions"></div>
                         </div>
               </div>
     </header>
