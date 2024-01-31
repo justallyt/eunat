@@ -1,0 +1,69 @@
+.hero-landing{
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/aboutHero.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+.hero-landing-texts{
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      color: whitesmoke;
+}
+.hero-landing-texts h3{
+       font-size: 21px;
+       margin-bottom: 10px;
+       font-weight: 500;
+       color: var(--main-color);
+}
+.hero-landing-texts h1{
+      font-size: 65px;
+      font-family: var(--font-bold);
+      width: 85%;
+}
+
+.about-body-section{
+    padding: 100px 0;
+}
+
+.about-body-section-content .numbers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+}
+.number-moja  h1{
+     font-size: 60px;
+     font-family: var(--font-bold);
+}
+
+.number-moja h3{
+      font-size: 20px;
+      font-weight: 500;
+      color: rgb(86, 86, 86);
+}
+
+.about-body-texts{
+     margin-top: 60px;
+}
+.about-body-texts-row{
+     display: grid;
+     grid-template-columns: 3fr 1.2fr;
+     gap: 50px;
+}
+.about-body-texts h1{
+       font-size: 65px;
+       margin-bottom: 30px;
+}
+
+.about-body-texts p{
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.statement-moja h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}

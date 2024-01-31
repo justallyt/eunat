@@ -11,9 +11,11 @@ const ServicesSection = () => {
                 <div className="inner-row">
                             <div className="services-section-content">
                                         <div className="services-intro">
-                                                   <h1>Comprehensive Set of <span>Cargo & Shipping</span> Services<span className="alternate">.</span></h1>
-                                                   <p>Our global logistics expertise, advanced supply chain technology & customized logistics solutions will help you develop and implement successful supply chain management strategies from end-to-end.</p>
-                                                   <Link to={'/'}>All Services <span><RiArrowRightFill /></span></Link>
+                                                   <div className="services-intro-sticky">
+                                                              <h1>Comprehensive Set of <span>Cargo & Shipping</span> Services<span className="alternate">.</span></h1>
+                                                              <p>Our global logistics expertise, advanced supply chain technology & customized logistics solutions will help you develop and implement successful supply chain management strategies from end-to-end.</p>
+                                                              <Link to={'/'}>All Services <span><RiArrowRightFill /></span></Link>
+                                                   </div>
                                         </div>
                                         <div className="services-row">
                                                   <div className="service-moja-outline">
