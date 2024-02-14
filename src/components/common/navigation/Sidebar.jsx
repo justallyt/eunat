@@ -1,8 +1,8 @@
 import gsap from 'gsap'
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef,} from "react";
 import { sidebarContext } from "./navcontext";
 import logo from '../../../assets/logo.png'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink,   useLocation} from 'react-router-dom';
 import { CgClose } from 'react-icons/cg';
 import { BsEnvelope } from "react-icons/bs"
 import { IoMdCall } from "react-icons/io"
@@ -10,6 +10,10 @@ import { IoMdCall } from "react-icons/io"
 const Sidebar = () => {
   const [sidebarStatus,setSidebarStatus] = useContext(sidebarContext)
   const sidebarRef = useRef();
+  const { pathname } = useLocation();
+  const realpath = pathname.slice(1,8)
+
+
   useEffect(() =>{
           if(sidebarStatus){
                 sidebarRef.current.classList.add('active');
@@ -62,7 +66,7 @@ const Sidebar = () => {
                                                <ul>
                                                           <li><NavLink to={'/'}>Home</NavLink></li>
                                                           <li><NavLink to={'/about-us/'}>About</NavLink></li>
-                                                          <li><NavLink to={'/services/'}>Services</NavLink></li>
+                                                          <li><NavLink to={'/services/'} className={realpath == 'service' ? 'active' : ''}>Services</NavLink></li>
                                                           <li><NavLink to={'/contact-us/'}>Contact Us</NavLink></li>
                                                </ul>
                                      </nav>
@@ -76,7 +80,7 @@ const Sidebar = () => {
                                                <h4>Call Us</h4>
                                                <div className="details-box">
                                                         <span><IoMdCall /></span>
-                                                        <p>+254 7123 45678</p>
+                                                        <p>+(254) 7170 00216</p>
                                                </div>
 
                                                <Link to={'/'}>Get A Quote</Link>

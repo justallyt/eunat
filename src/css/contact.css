@@ -79,9 +79,15 @@
         font-size: 26px;
         margin-bottom: 10px;
 }
+.contact-detail-box h4{
+         font-size: 18px;
+         color: #333;
+         margin:10px 0;
+         font-weight: 500;
+}
 .contact-detail-box p{
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: rgb(42, 42, 42);
     display: flex;
     align-items: center;

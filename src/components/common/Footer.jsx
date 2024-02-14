@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png"
 import { BsEnvelopeAt } from "react-icons/bs";
 import { IoMdCall } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { SiTiktok } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
@@ -26,26 +26,26 @@ const Footer = () => {
                                                   <div className="footer-column">
                                                                <h2 className="footer-title">Company</h2>
                                                                <ul>
-                                                                          <li><Link to=''>Home</Link></li>
-                                                                          <li><Link to=''>About</Link></li>
-                                                                          <li><Link to=''>Services</Link></li>
-                                                                          <li><Link to=''>Contact</Link></li>
-                                                                          <li><Link to=''>Privacy Policy</Link></li>
+                                                                          <li><Link to='/'>Home</Link></li>
+                                                                          <li><Link to='/about/'>About</Link></li>
+                                                                          <li><Link to='/services/'>Services</Link></li>
+                                                                          <li><Link to='/contact-us/'>Contact</Link></li>
+                                                                          <li><Link to='#'>Privacy Policy</Link></li>
                                                                </ul>
                                                   </div>
                                                   <div className="footer-column">
                                                               <h2 className="footer-title">Services</h2>
                                                                <ul>
-                                                                          <li><Link to=''>Warehousing</Link></li>
-                                                                          <li><Link to=''>Ocean Freight</Link></li>
-                                                                          <li><Link to=''>Container Leasing</Link></li>
-                                                                          <li><Link to=''>Air Freight</Link></li>
-                                                                          <li><Link to=''>Road Frieght</Link></li>
+                                                                          <li><Link to='/service/warehousing'>Warehousing</Link></li>
+                                                                          <li><Link to='/service/ocean-freight'>Ocean Freight</Link></li>
+                                                                          <li><Link to='/service/cargo-consolidation'>Cargo Consolidation</Link></li>
+                                                                          <li><Link to='/service/air-freight'>Air Freight</Link></li>
+                                                                          <li><Link to='/service/road-freight'>Road Frieght</Link></li>
                                                                </ul>
                                                   </div>
                                                   <div className="footer-column">
                                                             <h2 className="footer-title">Office</h2>
-                                                            <p>123 Anywhere St, Any City, Chai Road 3425</p>
+                                                            <p>3rd Floor, Alta Towers,Opposite Yaya Center</p>
 
                                                             <h3>Contact Us</h3>
                                                              <div className="footer-box">
@@ -54,7 +54,7 @@ const Footer = () => {
                                                              </div>
                                                              <div className="footer-box">
                                                                        <span><IoMdCall /></span>
-                                                                       <p>+254 7123 45678</p>
+                                                                       <p>+(254) 7170 00216</p>
                                                              </div>
                                                   </div>
                                       </div>
@@ -64,9 +64,9 @@ const Footer = () => {
                                      <p>&copy; {new Date().getFullYear()} All rights reserved - Eunat International Limited</p>
                                      <div className="footer-social-links">
                                                 <ul>
-                                                           <Link to={'/'}><span><FaFacebookF /></span></Link>
-                                                           <Link to={'/'}><span><FaXTwitter /></span></Link>
-                                                           <Link to={'/'}><span><AiFillInstagram /></span></Link>
+                                                        <Link to={'#'}><span><FaFacebookF /></span></Link>
+                                                        <Link to={'https://www.tiktok.com/@eunatinternational'} target="_blank"><span><SiTiktok /></span></Link>
+                                                        <Link to={'https://www.instagram.com/eunat_international_limited/'} target="_blank"><span><AiFillInstagram /></span></Link>
                                                 </ul>
                                      </div>
                            </div>

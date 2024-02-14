@@ -44,7 +44,7 @@ const Landing = () => {
                          
                                                                                                    <div  className={isActive ? 'hero-btns active' : 'hero-btns'}>
                                                                                                                <Link to={'/'}>Get A Quote</Link>
-                                                                                                               <Link to={'/'}>Our Services</Link>
+                                                                                                               <Link to={'/services/'}>Our Services</Link>
                                                                                                    </div>
                                                                                            </div>
                                                                               </div>

@@ -14,7 +14,7 @@ const ServicesSection = () => {
                                                    <div className="services-intro-sticky">
                                                               <h1>Comprehensive Set of <span>Cargo & Shipping</span> Services<span className="alternate">.</span></h1>
                                                               <p>Our global logistics expertise, advanced supply chain technology & customized logistics solutions will help you develop and implement successful supply chain management strategies from end-to-end.</p>
-                                                              <Link to={'/'}>All Services <span><RiArrowRightFill /></span></Link>
+                                                              <Link to={'/services/'}>All Services <span><RiArrowRightFill /></span></Link>
                                                    </div>
                                         </div>
                                         <div className="services-row">
@@ -22,7 +22,7 @@ const ServicesSection = () => {
                                                             <div className="service-desc">
                                                                       <div className="desc-inner">
                                                                                 <h2>Ocean Freight</h2>
-                                                                                 <Link to={'/'}>Explore More <span><GoArrowUpRight /></span></Link>
+                                                                                 <Link to={'/service/ocean-freight'}>Explore More <span><GoArrowUpRight /></span></Link>
                                                                       </div>
                                                             </div>
                                                             <div className="service-image">
@@ -33,7 +33,7 @@ const ServicesSection = () => {
                                                             <div className="service-desc">
                                                                       <div className="desc-inner">
                                                                                 <h2>Air Freight</h2>
-                                                                                 <Link to={'/'}>Explore More <span><GoArrowUpRight /></span></Link>
+                                                                                 <Link to={'/service/air-freight'}>Explore More <span><GoArrowUpRight /></span></Link>
                                                                       </div>
                                                             </div>
                                                             <div className="service-image">
@@ -44,7 +44,7 @@ const ServicesSection = () => {
                                                             <div className="service-desc">
                                                                       <div className="desc-inner">
                                                                                 <h2>Road Freight</h2>
-                                                                                 <Link to={'/'}>Explore More <span><GoArrowUpRight /></span></Link>
+                                                                                 <Link to={'/service/road-freight'}>Explore More <span><GoArrowUpRight /></span></Link>
                                                                       </div>
                                                             </div>
                                                             <div className="service-image">
@@ -55,7 +55,7 @@ const ServicesSection = () => {
                                                             <div className="service-desc">
                                                                       <div className="desc-inner">
                                                                                 <h2>Warehousing</h2>
-                                                                                 <Link to={'/'}>Explore More <span><GoArrowUpRight /></span></Link>
+                                                                                 <Link to={'/service/warehousing'}>Explore More <span><GoArrowUpRight /></span></Link>
                                                                       </div>
                                                             </div>
                                                             <div className="service-image">

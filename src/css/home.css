@@ -430,14 +430,16 @@
        font-size: 30px;
        margin-bottom: 10px;
 }
-.service-desc a{
+.service-desc a,
+.service-body-answer a{
        font-weight: 500;
        color: #222;
        display: flex;
        align-items: center;
        gap: 5px;
 }
-.service-desc a span{
+.service-desc a span,
+.service-body-answer a span{
        width: 35px;
        height: 35px;
        display: flex;
@@ -458,10 +460,12 @@
        -o-transition: all 0.3s ease;
 }
 
-.service-desc a:hover{
+.service-desc a:hover,
+.service-body-answer a:hover{
        color: var(--main-color);
 }
-.service-desc a:hover span{
+.service-desc a:hover span,
+.service-body-answer a:hover span{
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);

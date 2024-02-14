@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import logo from "../../../assets/logo.png"
 import { HiPhone } from "react-icons/hi2";
 import { CgMenuRight } from "react-icons/cg";
@@ -7,6 +7,8 @@ import { sidebarContext } from './navcontext';
 
 const Header = () => {
   const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext)
+   const { pathname } = useLocation();
+   const realpath = pathname.slice(1,8)
 
   const openSidebar = () => setSidebarStatus(true)
   return (
@@ -25,14 +27,14 @@ const Header = () => {
                                                <ul>
                                                           <li><NavLink to={'/'}>Home</NavLink></li>
                                                           <li><NavLink to={'/about/'}>About</NavLink></li>
-                                                          <li><NavLink to={'/services/'}>Services</NavLink></li>
+                                                          <li><NavLink to={'/services/'} className={realpath == 'service' ? 'active' : ''}>Services</NavLink></li>
                                                           <li><NavLink to={'/contact-us/'}>Contact Us</NavLink></li>
                                                </ul>
 
                                                <div className="header-actions">
                                                             <div className="call-action">
                                                                        <span><HiPhone /></span>
-                                                                        +254 7123 45678
+                                                                       +(254) 7170 00216
                                                             </div>
                                                             <Link to={'/'}>Get a Quote</Link>
 

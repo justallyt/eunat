@@ -78,7 +78,7 @@ const AboutSection = () => {
                                                                       <p>Eunat International Limited is a dynamic player in the cargo and shipping industry providing full range of services in the sphere of customs clearance and transportation worldwide.</p>
                                                                       <p>We pride ourselves on providing the best transport and shipping services available all over the world. Our skilled personnel, utilising the latest communications, tracking and combined with experience through integrated supply chain solutions.</p>
 
-                                                                      <Link to={'/'}>Read More <span><RiArrowRightFill /></span></Link>
+                                                                      <Link to={'/about/'}>Read More <span><RiArrowRightFill /></span></Link>
                                                           </div>
                                                  </div>
                                    </div>

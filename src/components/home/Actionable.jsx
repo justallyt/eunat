@@ -7,7 +7,7 @@ const Actionable = () => {
                           <div className="actionable-section-content">
                                      <img src={forklift} alt="" className="forklift"/>
                                       <h1>Got Any Question? Get In Touch Today</h1>
-                                      <Link to={'/'}>Let&apos;s Talk</Link>
+                                      <Link to={'/contact-us/'}>Let&apos;s Talk</Link>
                           </div>
                  </div>
     </div>

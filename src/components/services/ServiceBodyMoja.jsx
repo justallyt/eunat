@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { GoChevronDown } from "react-icons/go";
-
+import { Link } from "react-router-dom";
+import { GoArrowUpRight } from "react-icons/go";
 const ServiceBodyMoja = ({ data }) => {
     const [status, setStatus] = useState(false);
 
@@ -14,7 +15,8 @@ const ServiceBodyMoja = ({ data }) => {
                   </div>
                   <div className={ status ? "service-body-answer active" : "service-body-answer"}>
                              <div className="body-answer-inner">
-                                       <p>{data.description}</p>
+                                       <p>{data.introDescription}</p>
+                                       <Link to={data.link}>Explore More <span><GoArrowUpRight /></span></Link>
                              </div>
                   </div>
     </div>

@@ -76,7 +76,7 @@ const Quotation = () => {
                                      <h3>Safe And Reliable Shipping Solutions!</h3>
                                      <p>We pride ourselves in providing the best transport & shipping services available all over the world.</p>
 
-                                     <Link to={'/'}>Contact Us <span><RiArrowRightFill /></span></Link>
+                                     <Link to={'/contact-us/'}>Contact Us <span><RiArrowRightFill /></span></Link>
                         </div>
              </div>
     </div>
